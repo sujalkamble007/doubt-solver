@@ -1,73 +1,99 @@
-# Welcome to your Lovable project
+# Doubt Solver
 
-## Project info
+Doubt Solver is a web application designed to help users manage and resolve their doubts efficiently. It provides features like submitting doubts, tracking their status, and categorizing them for better organization.
 
-**URL**: https://lovable.dev/projects/f1323dce-cb77-46e6-bb39-d2999da04db0
+## Features
 
-## How can I edit this code?
+- Submit new doubts with detailed descriptions.
+- Categorize doubts into predefined categories.
+- Track the status of doubts (Pending, In Progress, Resolved).
+- Edit or delete existing doubts.
+- Filter and search doubts by category, status, or keywords.
+- Responsive design for seamless usage across devices.
 
-There are several ways of editing your application.
+## Technologies Used
 
-**Use Lovable**
+- **Vite**: Fast build tool for modern web projects.
+- **React**: Component-based UI library.
+- **TypeScript**: Strongly typed JavaScript for better development experience.
+- **Tailwind CSS**: Utility-first CSS framework.
+- **shadcn-ui**: Prebuilt UI components for React.
+- **React Router**: For client-side routing.
+- **date-fns**: For date manipulation and formatting.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f1323dce-cb77-46e6-bb39-d2999da04db0) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+Ensure you have the following installed:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Node.js** (v16 or later) and **npm** (v8 or later).  
+  You can install them using [nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
+1. Clone the repository:
+   ```bash
+   git clone <YOUR_GIT_URL>
+   cd doubt-solver
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+4. Open your browser and navigate to `http://localhost:5173`.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## Project Structure
+
+```
+src/
+├── components/       # Reusable UI components
+├── data/             # Mock data and services
+├── hooks/            # Custom React hooks
+├── pages/            # Application pages
+├── types/            # TypeScript type definitions
+├── App.tsx           # Main application component
+├── index.css         # Global styles
+└── main.tsx          # Application entry point
 ```
 
-**Edit a file directly in GitHub**
+## Scripts
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- `npm run dev`: Start the development server.
+- `npm run build`: Build the project for production.
+- `npm run preview`: Preview the production build locally.
+- `npm run lint`: Run linting checks.
 
-**Use GitHub Codespaces**
+## Deployment
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+To deploy the project, build the production version using:
+```bash
+npm run build
+```
+Then, serve the `dist/` directory using your preferred hosting service.
 
-## What technologies are used for this project?
+## Contributing
 
-This project is built with:
+Contributions are welcome! To contribute:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes and push the branch.
+4. Open a pull request.
 
-## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/f1323dce-cb77-46e6-bb39-d2999da04db0) and click on Share -> Publish.
 
-## Can I connect a custom domain to my Lovable project?
+## Acknowledgments
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- [Vite](https://vitejs.dev/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn-ui](https://ui.shadcn.dev/)
+- [date-fns](https://date-fns.org/)
